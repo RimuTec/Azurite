@@ -1,0 +1,6 @@
+__blobstorage__/**
+__queuestorage__/**
+.devcontainer/**
+.vscode/**
+node_modules/**
+swagger/**

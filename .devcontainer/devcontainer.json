@@ -1,0 +1,9 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+{
+  "name": "Azurite Dev Container",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "azurite",
+  "workspaceFolder": "/app",
+  "extenions": [],
+  "shutdownAction": "stopCompose"
+}

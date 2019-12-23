@@ -7,6 +7,26 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "Azurite All Services (Dev Container)",
+      "cwd": "${workspaceFolder}",
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "args": [
+        "${workspaceFolder}/src/azurite.ts",
+        "-d",
+        "debug.log",
+        // "-l",
+        // "/data",
+        "--blobHost",
+        "0.0.0.0",
+        "--queueHost",
+        "0.0.0.0"
+      ],
+      "env": { "AZURITE_ACCOUNTS": "" },
+      "outputCapture": "std"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "Azurite Queue Service",
       "cwd": "${workspaceFolder}",
       "runtimeArgs": ["-r", "ts-node/register"],

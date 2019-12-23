@@ -1,3 +1,4 @@
+# Don't use alpine flavors as base image as it won't work reliably on Windows
 FROM node:10-alpine
 
 WORKDIR /opt/azurite

@@ -1,0 +1,16 @@
+version: "3.2"
+
+services:
+  azurite:
+    image: azurite-dev-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    ports:
+      - "10000:10000" # storage port
+      - "10001:10001" # queue port
+    volumes:
+      - ..:/app
+      - ~/.gitconfig:/root/.gitconfig
+    command: sleep infinity
